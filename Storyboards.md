@@ -1,8 +1,8 @@
-#Introduction
+# Introduction
 
 Welcome to my first blog post! In this blog, I’ll be writing down my opinions about contentious issues in the iOS community. The first topic is about the eternal battle of using storyboards, xibs, and/or programmatic layouts. For the purposes of this discussion, 
 
-##Small Projects
+## Small Projects
 I would define a small app as one having most of the following:
 - Eight or less viewcontrollers
 - One or two viewcontrollers for login
