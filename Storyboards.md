@@ -54,3 +54,9 @@ Fragility of Storyboards
 Even in a 1-3 person team, merge conflicts can occur. While likely less problematic than in a large team, merge conflicts in storyboards can be nasty to resolve. When the iOS team at 1904labs was still 3 people, we had storyboards that would occasionally fail to render either because of some partially failed merge conflicts or because the layouts were too complex. Even in our small team of 3 people, we faced this issue and, since the Storyboard file sometimes fails to render, we no longer have any of the benefits of Storyboards in visualizing the layout of that particular view.
 ### Team
 In a team setting, I recommend starting the project only with xibs and code, if possible. In practice, I realize that most people are comfortable working with storyboard, but not everyone is comfortable creating views only with xibs and code. 
+
+## Note About Tablet Layouts
+In my experimentation with tablet layouts, I've attempted to use a UISplitViewController through Storyboard and through code to dig up any possible difficulties that might arise with Storyboards or code, but I did not find any obstacles in either case. The `Tablet` and `Tablet-NS` (NS means No Storyboard) projects are included in this git repository for the reader's curiosity.
+
+## Note About Orientation Changes
+Having mostly worked with Storyboards, I was also curious about handling orientation changes through code, since Storyboards allow us to specify orientation changes for StackViews in 2-3 clicks in Interface Builder. Although I had to search through Apple's documentation for a little bit, I was able to achieve the same result in Storyboard and code. See `OrientationChanges` and `OrientationChanges-NS` if you're curious about the implementation.
